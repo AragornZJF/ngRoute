@@ -1,0 +1,34 @@
+<div>
+	<table class="table table-bordered table-hover">
+	  <!--<thead>  
+	    <tr>  
+	      <th colspan="4">定义路由$routeProvider表参数说明</th>  
+	    </tr>
+	  </thead>  -->
+	  <tbody> 
+	  	<tr>
+	  		<td colspan="4">
+	  			$routeProvider提供了定义路由表的服务，它有两个核心方法，when(path,route)和otherwise(params).<br />
+	  			其中path是一个string类型，表示该条路由规则所匹配的路径，它将与地址栏的内容($location.path)值进行匹配。<br />
+	  		    route参数是一个object，用来指定当path匹配后所需的一系列配置项
+	  		</td>
+	  	</tr>
+	  	<tr>
+	  		<td colspan="1">when(path,route)中path</td>
+	  		<td colspan="3">path是一个string类型，表示该条路由规则所匹配的路径，它将与地址栏的内容($location.path)值进行匹配</td>
+	  	</tr>
+	  	<tr>
+	  		<td colspan="1" rowspan="3">when(path,route)中route</td>
+	  		<td colspan="3">
+	  			<p>route参数是一个object，用来指定当path匹配后所需的一系列配置项</p>
+	  			<p>controller //function或string类型。在当前模板上执行的controller函数，生成新的scope</p>
+				<p>controllerAs //string类型，为controller指定别名</p>
+				<p>template //string或function类型，视图所用的模板，这部分内容将被ngView引用</p>
+				<p>templateUrl //string或function类型，当视图模板为单独的html文件或是使用了<script type="text/ng-template">定义模板时使用</p>
+				<p>resolve //指定当前controller所依赖的其他模块</p>
+				<p>redirectTo //重定向的地址</p>
+	  		</td>
+	  	</tr>
+	  </tbody>
+	</table>
+</div>

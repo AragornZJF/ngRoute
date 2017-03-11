@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+.main {
+	margin-top: -20px;
+}
+/*左侧导航*/
+.left-panel {
+	width: 240px;
+}
+.table thead tr th {
+	color:#ffffff;
+	background-color:#428bca;
+}

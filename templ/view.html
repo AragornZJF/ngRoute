@@ -1,0 +1,23 @@
+<table class="table table-bordered table-hover">
+  <thead>  
+    <tr>  
+      <th>员工姓名</th>  
+      <th>性别</th> 
+      <th>电话</th>  
+      <th>入职日期</th>
+      <th>所属部门</th>  
+    </tr>
+  </thead>  
+  <tbody>  
+    <tr>  
+	    <td>{{employer.name}}</td>  
+	    <td ng-filter = "typeFilter">{{employer.type | typeFilter}}</td>  
+	    <td>{{employer.phoneNumber}}</td>  
+	    <td>{{employer.carDate}}</td>  
+	    <td>{{employer.department}}</td>  
+    </tr>
+  </tbody>  
+</table>
+<div>
+  <button class="btn btn-sm btn-warning pull-right" type="button" ng-click="close()">关闭</button>
+</div>

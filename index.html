@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<title>ngRoute路由与多视图实现CRUD</title>
+		<link rel="stylesheet" href="framework/bootstrap-3.0.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="framework/angular-v1.5.5/angular.min.js" ></script>
+		<script type="text/javascript" src="framework/angular-route-v1.3.0/angular-route.min.js" ></script>
+		<script src="js/app.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/filter.js"></script>
+		<script src="js/service.js"></script>
+	</head>
+	<body>
+		
+		<div class="wrapper">
+			<!--头部start-->
+			<nav class="navbar navbar-inverse navbar-static-top mar-bottom-0">
+			    <ul class="nav navbar-nav">
+		            <li class="#/main"><a href="#/list">主页</a></li>
+		            <li><a href="#/routeDetail">路由参数说明</a></li>
+		            <li><a href="#/about">关于作者</a></li>
+		         </ul>
+			</nav>
+			<!--头部end-->
+			
+			<!--主体内容start-->
+			<div class="main">
+				<div class="right-panel">
+					<!--视图-->
+					<div ng-view></div>
+				</div>
+			</div>
+			<!--主体内容end-->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<div class="modal-header">
+    <h3 class="modal-title">编辑卡片信息</h3>
+</div>
+<div class="modal-body">
+  <div class="col-sm-12">
+	<form role = "form">
+	    <div class = "form-group clearfix"> 
+	    	<label class="col-sm-2 control-label">员工姓名</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="请输入员工姓名" ng-model="employer.name">
+            </div>
+	    </div>
+	    <div class = "form-group clearfix"> 
+	    	<label class="col-sm-2 control-label">性别</label>
+            <div class="col-sm-10">
+                <input type="radio" ng-if="employer.type == 1"/>男 
+                <input type="radio" ng-if="employer.type == 2"/>女
+            </div>
+	    </div>
+	    
+	    <div class = "form-group clearfix"> 
+	    	<label class="col-sm-2 control-label">电话号码</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="请输入电话号码" ng-model="employer.phoneNumber">
+            </div>
+	    </div>
+	    <div class = "form-group clearfix"> 
+	    	<label class="col-sm-2 control-label">入职日期</label>
+            <div class="col-sm-10">
+				<input type="text" class="form-control"  placeholder = "请输入您的开卡日期" ng-model="employer.carDate"/>
+            </div>
+	    </div>
+	    <div class = "form-group clearfix"> 
+	    	<label class="col-sm-2 control-label">所属部门</label>
+            <div class="col-sm-10">
+				<input type="text" class="form-control"  placeholder = "请输入部门名称" ng-model="employer.department"/>
+            </div>
+	    </div>
+   </form> 
+  </div>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-sm btn-primary" type="button" ng-click="ok()">确认</button>
+    <button class="btn btn-sm btn-warning" type="button" ng-click="cancel()">取消</button>
+</div>
